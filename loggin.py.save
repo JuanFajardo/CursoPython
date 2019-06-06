@@ -1,0 +1,15 @@
+import logging
+
+formato = "%(LevelName)s %(asctime)s - %(message)s"
+
+logging.basicConfig(	filename = "/var/www/html/2019/CursoPython/loggin.txt",
+		    	level	 = logging.DEBUG,
+			format	 = formato,
+			filemode = 'w'
+		    )
+
+msj 	=	 
+logger 	= logging.getLogger()
+logger.info("Esto es informacion que se guardara en el log del archivo")
+
+
